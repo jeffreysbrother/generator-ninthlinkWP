@@ -181,7 +181,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'GitHub username',
 			name: 'themeUser',
-			default: defaults.themeUser || 'wesleytodd',
+			default: defaults.themeUser || 'progothemes',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -189,7 +189,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'GitHub repository name',
 			name: 'themeRepo',
-			default: defaults.themeRepo || 'YeoPress',
+			default: defaults.themeRepo || 'pgb-child',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -197,7 +197,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Repository branch',
 			name: 'themeBranch',
-			default: defaults.themeBranch || 'template',
+			default: defaults.themeBranch || 'master',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -214,7 +214,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Remote tarball url',
 			name: 'themeTarballUrl',
-			default: defaults.themeTarballUrl || 'https://github.com/wesleytodd/YeoPress/archive/template.tar.gz',
+			default: defaults.themeTarballUrl || 'https://github.com/progothemes/pgb-child/archive/master.tar.gz',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'tar';
