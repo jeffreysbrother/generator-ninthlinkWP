@@ -11,7 +11,7 @@
   ],
   "main": "app/index.js",
   "author": "Wes Todd",
-  "license": "BSD",
+  "license": "LicenseRef-LICENSE",
   "dependencies": {
     "chalk": "^0.2.1",
     "mkdirp": "^0.3.5",
