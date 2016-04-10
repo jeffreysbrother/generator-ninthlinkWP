@@ -141,7 +141,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Destination directory',
 			name: 'themeDir',
-			default: defaults.themeDir || 'yeopress',
+			default: defaults.themeDir || '/',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme;
@@ -181,7 +181,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'GitHub username',
 			name: 'themeUser',
-			default: defaults.themeUser || 'progothemes',
+			default: defaults.themeUser || 'jeffreysbrother',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -189,7 +189,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'GitHub repository name',
 			name: 'themeRepo',
-			default: defaults.themeRepo || 'pgb-child',
+			default: defaults.themeRepo || 'generator-ninthlinkWP',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -197,7 +197,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Repository branch',
 			name: 'themeBranch',
-			default: defaults.themeBranch || 'master',
+			default: defaults.themeBranch || 'pgb-child',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'git';
@@ -214,7 +214,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Remote tarball url',
 			name: 'themeTarballUrl',
-			default: defaults.themeTarballUrl || 'https://github.com/progothemes/pgb-child/archive/master.tar.gz',
+			default: defaults.themeTarballUrl || 'https://github.com/jeffreysbrother/generator-ninthlinkWP/archive/pgb-child.tar.gz',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme && res.themeType == 'tar';
