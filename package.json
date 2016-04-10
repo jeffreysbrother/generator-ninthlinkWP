@@ -1,17 +1,18 @@
 {
-  "name": "YeoPress-Template",
-  "version": "0.0.2",
-  "description": "A basic template for use in YeoPress",
+  "name": "pgb-child-mod",
+  "version": "1.0.0",
+  "description": "An extension of the pgb-child theme",
   "scripts": {
     "test": ""
   },
   "keywords": [
     "Yeoman",
     "Wordpress",
-    "YeoPress",
-    "Template"
+    "ninthlinkWP",
+    "Template",
+    "Ninthlink"
   ],
-  "author": "Wes Todd",
+  "author": "Tim Spinks and James Cool",
   "license": "BSD",
   "devDependencies": {
     "grunt": "~0.4.1",
