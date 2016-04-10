@@ -141,7 +141,7 @@ module.exports = function(advanced, defaults) {
 		}, {
 			message: 'Destination directory',
 			name: 'themeDir',
-			default: defaults.themeDir || '/',
+			default: defaults.themeDir || '/pgb-child',
 			validate: requiredValidate,
 			when: function(res) {
 				return !!res.installTheme;
